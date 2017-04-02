@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.0'
+    defaultConfig {
+        applicationId "com.android.showmeeapp"
+        minSdkVersion 19
+        targetSdkVersion 24
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+	compile project(':library')
+	compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+	compile 'com.android.support:appcompat-v7:24.0.0'
+	compile 'com.android.support:design:24.0.0'
+	/*multidex support */
+	androidTestCompile('com.android.support:multidex-instrumentation:1.0.1') {
+		exclude group: 'com.android.support', module: 'multidex'
+	}
+	/*recycler view */
+	compile 'com.android.support:recyclerview-v7:24.0.0'
+	/* Google Implementation */
+	compile 'com.google.android.gms:play-services:9.2.0'
+	compile 'com.google.android.gms:play-services-auth:9.2.0'
+	/*Card view */
+	compile 'com.android.support:cardview-v7:24.0.+'
+	/* TagContainer */
+	compile 'co.lujun:androidtagview:1.0.3'
+	compile 'com.google.code.gson:gson:2.7'
+	compile files('libs/gcm.jar')
+}

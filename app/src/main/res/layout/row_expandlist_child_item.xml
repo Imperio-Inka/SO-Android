@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<com.android.showmeeapp.util.tagcontainer.TagContainerLayout
+		android:id="@+id/tagcontainerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relative_layout"
+		android:layout_margin="7dp"
+		android:padding="10dp"
+		app:container_background_color="#00000000"
+		app:container_border_color="@color/theme_color"
+		app:container_border_radius="1dp"
+		app:container_border_width="1dp"
+		app:container_enable_drag="true"
+		app:horizontal_interval="10dp"
+		app:tag_clickable="true"
+		app:tag_theme="random"
+		app:vertical_interval="10dp" />
+
+
+</RelativeLayout>

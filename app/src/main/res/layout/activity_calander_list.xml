@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.activities.CalendarListActivity">
+
+	<include
+		android:id="@+id/tool_bar"
+		layout="@layout/toolbar_layout" />
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/gray_transparent"
+		android:layout_below="@+id/tool_bar" />
+
+
+	<Button
+		android:id="@+id/btnSkip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="12dp"
+		android:background="@drawable/rounded_button_bg"
+		android:text="@string/Skip"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_size_16"
+		android:visibility="visible"/>
+
+
+	<Button
+		android:id="@+id/btn_Done"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="12dp"
+		android:background="@drawable/rounded_button_bg"
+		android:text="@string/Done"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_size_16"
+		android:visibility="gone"/>
+
+
+</RelativeLayout>
+

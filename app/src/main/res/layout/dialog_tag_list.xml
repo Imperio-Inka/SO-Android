@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/relative_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/theme_color">
+	<TextView
+		android:id="@+id/txtGuest"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/Select_Tags"
+		android:textColor="@color/white"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+		android:textSize="20dp" />
+
+		<ImageView
+			android:id="@+id/imgVwDone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/done_icon"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+			android:padding="5dp"/>
+	</RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:layout_below="@+id/relative_layout" />
+
+</RelativeLayout>

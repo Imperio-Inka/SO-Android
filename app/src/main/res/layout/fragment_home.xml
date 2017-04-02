@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/frame_container">
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar_layout" />
+
+	<RelativeLayout
+		android:id="@+id/relative_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_below="@id/toolbar">
+
+		<TextView
+			android:id="@+id/txtMonthDetails"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:text=""
+			android:textColor="@color/theme_color"
+			android:textSize="@dimen/text_size_22" />
+
+		<ImageView
+			android:id="@+id/imgPreviusMonth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="7dp"
+			android:src="@drawable/previus_icon" />
+
+
+		<ImageView
+			android:id="@+id/imgNextMonth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="7dp"
+			android:src="@drawable/next_icon" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relative_layout1"
+		android:orientation="horizontal"
+		android:weightSum="7">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="S"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="M"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="T"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="W"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="T"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="F"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="S"
+			android:textColor="@color/color_orange"
+			android:textSize="@dimen/text_size_18" />
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/linearLayout"
+		android:layout_marginTop="5dp"
+		android:paddingLeft="15dp"
+		android:fitsSystemWindows="true"/>
+
+	<View
+		android:id="@+id/view"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="5dp"
+		android:layout_below="@+id/recyclerView"
+		android:background="@color/bg_dark_grey"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerViewEvent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/view"
+		android:layout_marginTop="5dp"
+		android:fitsSystemWindows="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relative_layout_drawer_item"
+	android:layout_width="match_parent"
+	android:layout_height="46dp">
+
+	<ImageView
+		android:id="@+id/imgIcon"
+		android:layout_width="25dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:contentDescription="Home" />
+
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/imgIcon"
+		android:gravity="center_vertical"
+		android:minHeight="?android:attr/listPreferredItemHeightSmall"
+		android:paddingRight="40dp"
+		android:textAppearance="?android:attr/textAppearanceListItemSmall"
+		android:textColor="#000000" />
+
+	<ImageView
+		android:id="@+id/imgRightIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="12dp"
+		android:src="@drawable/drawer_next_icon" />
+
+</RelativeLayout>

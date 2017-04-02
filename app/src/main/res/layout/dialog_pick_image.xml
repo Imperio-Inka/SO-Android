@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layoutActionAccountOption"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_margin="15dp"
+	android:layout_alignParentBottom="true"
+	android:background="@color/white">
+
+	<TextView
+		android:id="@+id/txtTakePhoto"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:padding="10dp"
+		android:text="@string/Take_Photo"
+		android:textColor="@color/black"
+		android:textSize="@dimen/text_size_22"/>
+
+	<View
+		android:id="@+id/v1"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/txtTakePhoto"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="60dp"
+		android:layout_marginRight="60dp"
+		android:layout_marginTop="5dp"
+		android:background="@color/black" />
+
+	<TextView
+		android:id="@+id/txtChooseExisting"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/v1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:padding="10dp"
+		android:text="@string/Choose_Existing"
+		android:textColor="@color/black"
+		android:textSize="@dimen/text_size_22" />
+
+	<View
+		android:id="@+id/v2"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/txtChooseExisting"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="60dp"
+		android:layout_marginRight="60dp"
+		android:layout_marginTop="5dp"
+		android:background="@color/black" />
+
+
+	<TextView
+		android:id="@+id/txtCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/v2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:padding="10dp"
+		android:text="@string/Cancel"
+		android:textColor="@color/black"
+		android:textSize="@dimen/text_size_22" />
+
+</RelativeLayout>

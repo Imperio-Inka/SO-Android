@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="5dp"
+	android:id="@+id/rootReletiveLayout">
+
+	<RelativeLayout
+		android:id="@+id/relative_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/txtSectionDate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="TODAY , JUNE 2nd "
+			android:textColor="@color/theme_color"
+			android:textSize="@dimen/text_size_18" />
+		<View
+			android:id="@+id/viewheader"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/bg_dark_grey"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/relative_layout2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relative_layout">
+
+		<ImageView
+			android:id="@+id/imgEventPicture"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="5dp"
+			android:src="@drawable/img_profile_icon_man" />
+
+
+		<TextView
+			android:id="@+id/txtEventName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_toRightOf="@+id/imgEventPicture"
+			android:padding="5dp"
+			android:text="Alanonymous"
+			android:textColor="@color/black"
+			android:textSize="@dimen/text_size_18" />
+
+		<TextView
+			android:id="@+id/txtAtLocation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/txtEventName"
+			android:layout_toRightOf="@+id/imgEventPicture"
+			android:drawableLeft="@drawable/location_marker"
+			android:padding="5dp"
+			android:text="" />
+
+		<TextView
+			android:id="@+id/txtEventTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/txtAtLocation"
+			android:padding="10dp"
+			android:text="9:00AM TO 10:00AM"
+			android:textColor="@color/theme_color"
+			android:textSize="@dimen/text_size_12"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@id/txtEventTime"
+			android:background="@color/black_transparent_3"/>
+
+	</RelativeLayout>
+</RelativeLayout>

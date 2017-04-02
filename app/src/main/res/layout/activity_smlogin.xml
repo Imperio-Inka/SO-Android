@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_register_screen"
+	android:orientation="vertical"
+	android:weightSum="2">
+
+	<Spinner
+		android:id="@+id/spinner"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:prompt="@string/Select_School"
+		android:layout_margin="40dp"
+		android:layout_weight="0.1"
+		android:dropDownSelector="@drawable/down_arrow"
+		android:background="@drawable/edittext_bg" />
+
+A
+	<RelativeLayout
+		android:id="@+id/relative_layout_1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spinner"
+		android:layout_weight="1">
+
+		<com.android.showmeeapp.views.RoundedImageView
+			android:id="@+id/img_profile"
+			android:layout_width="@dimen/user_image_on_screen_width"
+			android:layout_height="@dimen/user_image_on_screen_height"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_profile_icon_man" />
+
+		<TextView
+			android:id="@+id/txtRegister"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/img_profile"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:text="@string/Register"
+			android:textColor="@color/black"
+			android:textSize="@dimen/text_size_18" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@+id/img_profile"
+			android:layout_marginLeft="60dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="32dp"
+			android:layout_toLeftOf="@+id/txtRegister"
+			android:background="@color/black_transparent_5" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@+id/img_profile"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="50dp"
+			android:layout_marginTop="32dp"
+			android:layout_toRightOf="@+id/txtRegister"
+			android:background="@color/black_transparent_5" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/layoutBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relative_layout_1"
+		android:layout_weight="0.9">
+
+
+		<Button
+			android:id="@+id/btn_login_google"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="100dp"
+			android:layout_marginTop="20dp"
+			android:background="@color/google_login_button"
+			android:text="@string/google_signup"
+			android:textColor="@color/white" />
+
+		<Button
+			android:id="@+id/btn_Get_started"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_login_google"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="100dp"
+			android:layout_marginTop="20dp"
+			android:background="@color/theme_color"
+			android:text="@string/get_started"
+			android:textColor="@color/white" />
+
+
+	</RelativeLayout><!--
+	<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/webview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />-->
+
+</LinearLayout>
+
+
+
+	<!--	<EditText
+            android:id="@+id/edt_School_Name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/edittext_bg"
+            android:drawableRight="@drawable/expand_arrow"
+            android:focusable="false"
+            android:hint="@string/Select_School"
+            android:padding="5dp" />-->

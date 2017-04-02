@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:visibility="gone"
+		android:id="@+id/relative_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/input_layout_tag"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_toLeftOf="@+id/btnAddTag"
+			android:padding="5dp">
+
+			<EditText
+				android:id="@+id/edt_Tag"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Input_Tag"
+				android:imeOptions="actionDone"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<Button
+			android:visibility="gone"
+			android:id="@+id/btnAddTag"
+			android:layout_width="50dp"
+			android:layout_height="30dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text="Add"
+			android:layout_marginRight="10dp"
+			android:background="@color/colorLoadingBg"
+			android:textColor="@color/theme_color" />
+	</RelativeLayout>
+
+	<com.android.showmeeapp.util.tagcontainer.TagContainerLayout
+		android:id="@+id/tagcontainerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relative_layout"
+		android:layout_margin="7dp"
+		android:padding="10dp"
+		app:container_background_color="#00000000"
+		app:container_border_color="@color/theme_color"
+		app:container_border_radius="1dp"
+		app:container_border_width="1dp"
+		app:container_enable_drag="true"
+		app:horizontal_interval="10dp"
+		app:tag_clickable="true"
+		app:tag_theme="none"
+		app:vertical_interval="10dp" />
+
+</RelativeLayout>

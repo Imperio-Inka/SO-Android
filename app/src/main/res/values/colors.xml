@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="white">#ffffff</color>
+	<color name="white_transparent">#AAffffff</color>
+	<color name="theme_color">#910029</color>
+	<color name="transparant">#00ffffff</color>
+
+
+
+	<color name="bg_dark_grey">#d4d4d4</color>
+	<color name="bg_darker_grey">#707070</color>
+	<color name="bg_light_grey">#a5a49f</color>
+	<color name="bg_darkest_grey">#464545</color>
+
+	<color name="bg_gradient_start">#A67B6A</color>
+	<color name="bg_gradient_center">#FFC78E</color>
+	<color name="bg_gradient_end">#663014</color>
+
+	<color name="black">#000000</color>
+	<color name="black_transparent">#DD000000</color>
+	<color name="black_transparent_2">#88000000</color>
+	<color name="black_transparent_3">#22000000</color>
+	<color name="black_transparent_4">#AA000000</color>
+	<color name="black_transparent_5">#66000000</color>
+	<color name="sky_blue">#C9EEFF</color>
+	<color name="light_sky_blue">#E4F6FF</color>
+	<color name="gray_transparent">#AAb5b5b5</color>
+	<color name="blue">#019ece</color>
+
+	<color name="listSelector">#abc321</color>
+	<color name="red">#AA0000</color>
+	<color name="indigo">#1a238b</color>
+	<color name="pink">#dc1ce2</color>
+	<color name="facebook_button">#3C5B9C</color>
+	<color name="google_login_button">#E65242</color>
+	<color name="colorLoadingBg">#FACECE</color>
+	<color name="maroon_transparent">#cc910029</color>
+	<color name="color_orange">#e13003</color>
+	<color name="color_green_transparent">#e4819b86</color>
+
+</resources>

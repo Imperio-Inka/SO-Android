@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ShowMee</string>
+
+	<string name="google_signup">Sign up with google</string>
+	<string name="facebook_signup">Sign up with facebook</string>
+	<string name="get_started">Get Started Now</string>
+	<string name="update_profile">Update Profile</string>
+
+	<string name="No_Internet_connection">No internet connection</string>
+	<string name="Import_Google_calendar">SELECT GOOGLE CALENDARS TO IMPORT</string>
+
+	<string name="Select_School"> Select school</string>
+	<string name="Register">Register</string>
+	<string name="Home">Home</string>
+	<string name="MyTegs">My Tags</string>
+	<string name="SelectTags">Select Tags</string>
+	<string name="Settings">Settings</string>
+	<string name="profile">Profile</string>
+
+	<string name="MyCalendar">My Calendar</string>
+	<string name="CreateEvent">Create Event</string>
+	<string name="UpadateEvent">Update Event</string>
+	<string name="EventDETAILS">Event Details</string>
+	<string name="Input_Tag">Enter tag name</string>
+	<string name="Done">Done</string>
+	<string name="Skip">Skip</string>
+	<string name="SearchForFriend">Search for friends</string>
+
+	<string name="Feedback">Feedback</string>
+	<string name="RateTheApp">Rate The App</string>
+	<string name="TermsAndConditions">Terms And Conditions</string>
+	<string name="DeleteAccount">Delete Account</string>
+
+	<string name="Take_Photo">Take Photo</string>
+	<string name="Choose_Existing">Choose Existing</string>
+	<string name="Cancel">Cancel</string>
+
+	<string name="EventTitle">Event Title</string>
+	<string name="EventTags">Event Tags</string>
+	<string name="Description">Description</string>
+	<string name="GUEST">Guests</string>
+	<string name="Location">Location</string>
+	<string name="StarTime">Start Time</string>
+	<string name="EndTime">End Time</string>
+	<string name="PublicEvent">Public Event</string>
+	<string name="Invite">Guest can invite others</string>
+	<string name="Select_Tags">Select Tags</string>
+	<string name="Select_Date"> DD/MM/YYYY </string>
+	<string name="Select_Time">HH:MM</string>
+
+
+	<string name="CreateAccountMessege">Please log into our app using your social account.</string>
+	<string name="CreateAccountMessege_Event">To create an event please log into our app using your social account.</string>
+	<string name="CreateAccountMessege_AddFriend">To add a friend please log into our app using your social account.</string>
+
+
+	<string-array name="nav_drawer_items">
+		<item>Home</item>
+		<item>My Calendar</item>
+		<item>Manage Tags</item>
+		<item>Create Event</item>
+		<item>Settings</item>
+		<item>Profile</item>
+	</string-array>
+	<array name="nav_drawer_icons">
+		<item>@drawable/drawer_home_icon</item>
+		<item>@drawable/drawer_calendar_icon</item>
+		<item>@drawable/drawer_tag_icon</item>
+		<item>@drawable/drawer_event_icon</item>
+		<item>@drawable/ic_setting_light</item>
+	</array>
+
+
+	<string-array name="dept_array">
+		<item>Apparel</item>
+		<item>Beauty</item>
+		<item>Electronics</item>
+		<item>Grocery</item>
+		<item>Home Improvement</item>
+		<item>Jewelry</item>
+		<item>Pharmacy</item>
+	</string-array>
+
+
+	<string name="open_activity">Open Autocomplete Activity</string>
+	<string name="selected_place">Last Selected Place:</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+
+	<!--GCM STRINGS-->
+	<string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+	<string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+	<string name="gcm_error">From GCM: error (%1$s).</string>
+	<string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+
+
+</resources>
